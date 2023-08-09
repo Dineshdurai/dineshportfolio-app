@@ -1,8 +1,7 @@
-
 import Image from "next/image";
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
+import { AiFillLinkedin, AiFillYoutube, AiFillGithub } from "react-icons/ai";
 import deved from "../../public/dev-ed-wave.png";
 import design from "../../public/design.png";
 import code from "../../public/code.png";
@@ -13,6 +12,7 @@ import web3 from "../../public/web3.png";
 import web4 from "../../public/web4.png";
 import web5 from "../../public/web5.png";
 import web6 from "../../public/web6.png";
+import React from "react";
 
 //'use client';
 // import { useState } from "react";
@@ -30,11 +30,10 @@ import web6 from "../../public/web6.png";
 //   )
 // }// className={darkMode ? "dark" : ""}
 
-
 export default function Home() {
   //const [darkMode, setDarkMode] = useState(false);
   return (
-    <div >
+    <div>
       <Head>
         <title>Home</title>
       </Head>
@@ -44,18 +43,18 @@ export default function Home() {
             <h1 className="text-xl font-burtons ">Developedby</h1>
             <ul className="flex items-center">
               <li>
-               {/* <DarkModeCode></DarkModeCode> */}
+                {/* <DarkModeCode></DarkModeCode> */}
                 {/* {" "}
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className="cursor-pointer"
                 />{" "} */}
-
               </li>
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-green-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
+                  href="Dinesh_Durai_Resume_2023.pdf"
+                  target="_blank"
                 >
                   Resume
                 </a>
@@ -72,11 +71,23 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillLinkedin />
-            <AiFillYoutube />
+            <a href="https://www.linkedin.com/in/dinesh-durai-752b46104/">
+              <AiFillLinkedin />
+            </a>
+            <a href="https://www.youtube.com/@dineshdurai9820">
+              <AiFillYoutube />
+            </a>
+            <a href="https://github.com/Dineshdurai">
+              <AiFillGithub />
+            </a>
           </div>
           <div className="relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mx-auto overflow-hidden">
-            <Image src={deved} alt="portfolio-image" layout="fill" objectFit="cover"></Image>
+            <Image
+              src={deved}
+              alt="portfolio-image"
+              layout="fill"
+              objectFit="cover"
+            ></Image>
           </div>
         </section>
         <section className="">
@@ -121,23 +132,35 @@ export default function Home() {
               <p className="text-gray-800 py-1">Indesign</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} alt="portfolio-image"/>
+              <Image
+                src={code}
+                width={100}
+                height={100}
+                alt="portfolio-image"
+              />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Code your dream project
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let us make it a
-                reality.
+                Do you have an idea for your next great LMS website? Let us make
+                it a reality.
               </p>
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <p className="text-gray-800 py-1">VSCode</p>
+              <p className="text-gray-800 py-1"></p>
+              <p className="text-gray-800 py-1">Git</p>
+              <p className="text-gray-800 py-1">Php Unittesting</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} alt="portfolio-image" />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
+              <Image
+                src={consulting}
+                width={100}
+                height={100}
+                alt="portfolio-image"
+              />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">
+                Consulting On Moodle LMS
+              </h3>
               <p className="py-2">
                 Are you interested in feedback for your current project? I can
                 give you tips and tricks to level it up.
