@@ -6,8 +6,8 @@ import deved from "../../public/dev-ed-wave.png";
 import design from "../../public/design.png";
 import code from "../../public/code.png";
 import consulting from "../../public/consulting.png";
-import web1 from "../../public/web1.png";
-import web2 from "../../public/web2.png";
+import web1 from "../../public/tekstac_2018.jpg";
+import web2 from "../../public/itrack.png";
 import web3 from "../../public/web3.png";
 import web4 from "../../public/web4.png";
 import web5 from "../../public/web5.png";
@@ -61,13 +61,16 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10">
+          <div className="text-center p-2">
             <h2 className="text-5xl py-2 text-teal-500 font-medium">
               Dinesh Durai
             </h2>
             <h3 className="text-2xl py-2">Team Lead and Moodle Developer</h3>
             <p className="text-md py-5 leading-5 text-gray-800">
-              Freelancer Providing solution on edutech. Having
+              Freelancer Providing solution on edutech. Having 8+ years of
+              proven experience in Software Development and Edutech space.
+              Excellent reputation for resolving problems, providing scalable
+              stable system and improving customer satisfaction.
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
@@ -98,7 +101,7 @@ export default function Home() {
               worked with varies clients across the glob{" "}
               <span className="text-teal-500">
                 {" "}
-                Capgemini, CTS, Accenture, ACD, RANZCO CICM{" "}
+                Capgemini, CTS, Accenture, ACD, RANZCO, CICM{" "}
               </span>{" "}
               and etc.
             </p>
