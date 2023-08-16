@@ -2,6 +2,7 @@ import Image from "next/image";
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillYoutube, AiFillGithub } from "react-icons/ai";
+//import { MDBFooter } from "mdb-react-ui-kit";
 import deved from "../../public/dev-ed-wave.png";
 import design from "../../public/design.png";
 import code from "../../public/code.png";
@@ -111,7 +112,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className=" text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+            {/* <div className=" text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <div>
                 <Image
                   class="object-center"
@@ -133,26 +134,40 @@ export default function Home() {
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
               <p className="text-gray-800 py-1">Indesign</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            </div> */}
+            <div className="text-left shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image
                 src={code}
                 width={100}
                 height={100}
                 alt="portfolio-image"
               />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
-                Code your dream project
+              <h3 className="text-center text-lg font-medium pt-8 pb-2 ">
+                Setup you Dream LMS Site
               </h3>
-              <p className="py-2">
+              <p className="text-center py-2">
                 Do you have an idea for your next great LMS website? Let us make
                 it a reality.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">VSCode</p>
-              <p className="text-gray-800 py-1"></p>
-              <p className="text-gray-800 py-1">Git</p>
-              <p className="text-gray-800 py-1">Php Unittesting</p>
+              <h4 className="py-4 text-teal-600">Moodle Services </h4>
+              <p className="text-gray-800 text-left py-1">
+                Microsoft 365/Azure AD to Moodle
+              </p>
+              <p className="text-gray-800 text-left py-1">
+                Wordpress to Moodle SSO
+              </p>
+              <p className="text-gray-800 text-left py-1">
+                Zoho CRM Moodle Integration
+              </p>
+              <p className="text-gray-800 text-left py-1">
+                VPL Plugin Installing and Jail server Setup
+              </p>
+              <p className="text-gray-800 text-left py-1">
+                Payment Gateway Integration
+              </p>
+              <p className="text-gray-800 text-left py-1">
+                Moodle Setup and Hosting in AWS
+              </p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image
@@ -168,11 +183,16 @@ export default function Home() {
                 Are you interested in feedback for your current project? I can
                 give you tips and tricks to level it up.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 text-teal-600 text-left">
+                Consulting Services
+              </h4>
+              <p className="text-gray-800 text-left py-1">
+                Improve LMS performance
+              </p>
+              <p className="text-gray-800 text-left py-1">Best Practices</p>
+              <p className="text-gray-800 text-left py-1">
+                Root Cause Analysis
+              </p>
             </div>
           </div>
         </section>
@@ -233,29 +253,37 @@ export default function Home() {
                 alt="portfolio-image"
               />
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web5}
-                alt="portfolio-image"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
-                alt="portfolio-image"
-              />
-            </div>
           </div>
         </section>
       </main>
+
+      <footer bgColor="light" className="text-center text-lg-left">
+        <div
+          className="text-center p-3"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+        >
+          &copy; {new Date().getFullYear()} Copyright Designed & Developed By:{" "}
+          <a
+            className="text-dark"
+            href="https://dineshportfolio-app.vercel.app/"
+          >
+            Dinesh Durai
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
+
+// export default function App() {
+//   return (
+//     <MDBFooter bgColor='light' className='text-center text-lg-left'>
+//       <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+//         &copy; {new Date().getFullYear()} Copyright:{' '}
+//         <a className='text-dark' href='https://mdbootstrap.com/'>
+//           MDBootstrap.com
+//         </a>
+//       </div>
+//     </MDBFooter>
+//   );
+// }
